@@ -15,12 +15,11 @@ window.onload = function() {
     "right on time",
     "when I finished",
     "during my lunch",
-    "while I was praying",
+    "while I was praying"
   ];
 
   let excusa = "";
 
-  let num = Math.floor(Math.random() * who.length - 1);
   excusa = who[num] + "";
 
   num = Math.floor(Math.random() * action.length - 1);
@@ -32,7 +31,12 @@ window.onload = function() {
   num = Math.floor(Math.random() * when.length - 1);
   excusa = excusa + "";
 
-  document.getElementById("excusa").innerText = excusa;
+  document.getElementById("excusa").innerText - excusa;
 
   console.log(excusa);
 };
+
+function randomVal(arr) {
+  num = Math.floor(Math.random() * (arr.length - 1));
+  return arr[num] + "";
+}
