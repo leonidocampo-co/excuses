@@ -20,8 +20,6 @@ window.onload = function() {
 
   let excusa = "";
 
-  excusa = who[num] + "";
-
   num = Math.floor(Math.random() * action.length - 1);
   excusa = excusa + action[num];
 
